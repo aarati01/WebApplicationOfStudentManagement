@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    .header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+    }
+    .container {
+      margin: 20px auto;
+      width: 90%;
+      max-width: 1200px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+    .button-container button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #333;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f4f4f4;
+    }
+    .action-buttons button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      margin: 0 5px;
+    }
+    .action-buttons .edit {
+      color: #007bff;
+    }
+    .action-buttons .delete {
+      color: #dc3545;
+    }
+    .courses {
+      color: #555;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">Student Management System</div>
+  <div class="container">
+    <div class="button-container">
+      <button onclick="addNewStudent()">Add Student</button>
+      <button onclick="addNewCourse()">Add Course</button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Semester</th>
+          <th>Courses</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="student-table">
+        <tr>
+          <td>1</td>
+          <td>John</td>
+          <td>Doe</td>
+          <td>Spring 2024</td>
+          <td class="courses">Math, Science, History</td>
+          <td class="action-buttons">
+            <button class="edit" onclick="editStudent(1)">✎</button>
+            <button class="delete" onclick="deleteStudent(1)">✖</button>
+          </td>
+        </tr>
+        <!-- Additional rows will be dynamically added here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    // Example JavaScript for dynamically adding rows
+    function addNewStudent() {
+      alert("Function to add a new student will be implemented here.");
+    }
+
+    function addNewCourse() {
+      alert("Function to add a new course will be implemented here.");
+    }
+
+    function editStudent(id) {
+      alert(`Edit student with ID: ${id}`);
+    }
+
+    function deleteStudent(id) {
+      alert(`Delete student with ID: ${id}`);
+    }
+  </script>
+
+</body>
+</html>
